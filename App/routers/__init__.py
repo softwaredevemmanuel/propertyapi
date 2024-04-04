@@ -11,11 +11,11 @@ from Auth.routers.password_reset.verify_code import verify_password_reset_code_r
 from Auth.routers.password_reset.reset_pwd import reset_password_router
 
 #.......................................Property..................................
-# from Property.routers.listing_type import listing_type_router
-# from Property.routers.property import property_router
-# from Property.routers.opportunity import opportunity_router
-# from Property.routers.investment_plan import investment_plan_router
-# from Property.routers.subscription import subscription_router
+from Property.routers.listing_type import listing_type_router
+from Property.routers.property import property_router
+from Property.routers.opportunity import opportunity_router
+from Property.routers.investment_plan import investment_plan_router
+from Property.routers.subscription import subscription_router
 
 
 
@@ -34,11 +34,11 @@ router.include_router(router=reset_password_router,tags=["Reset User Password"])
 
 
 #.......................................Property..................................
-# router.include_router(router=listing_type_router,tags=["ListingType"])
-# router.include_router(router=property_router,tags=["Property"])
-# router.include_router(router=opportunity_router,tags=["OpportunityModel"])
-# router.include_router(router=investment_plan_router,tags=["InvestmentPlan"])
-# router.include_router(router=subscription_router,tags=["Subscription"])
+router.include_router(router=listing_type_router,tags=["ListingType"])
+router.include_router(router=property_router,tags=["Property"])
+router.include_router(router=opportunity_router,tags=["OpportunityModel"])
+router.include_router(router=investment_plan_router,tags=["InvestmentPlan"])
+router.include_router(router=subscription_router,tags=["Subscription"])
 
 
 
